@@ -1,0 +1,13 @@
+<!-- <p>register works!</p> -->
+<form class="form-1">
+    <label>Email</label>
+    <input type="text" [formControl]="EmailCtrl">
+
+    <label>Name</label>
+    <input type="text" [formControl]="NameCtrl">
+
+    <label>Password</label>
+    <input type="text" [formControl]="PasswordCtrl">
+
+    <button routerLink="/" (click)="register()" mat-stroked-button color="primary">Register</button>
+</form>

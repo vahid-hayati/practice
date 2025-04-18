@@ -1,0 +1,120 @@
+<section>
+  <div>
+    <header>
+      <app-navbar />
+    </header>
+    <main>
+      <router-outlet />
+    </main>
+    <footer>
+      <app-footer />
+    </footer>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <router-outlet /> -->
+
+<!-- router-outlet to main
+<section>
+  <div>
+    <header>
+      <nav>
+        <app-navbar />
+      </nav>
+    </header>
+
+    <main>
+      <router-outlet />
+    </main>
+
+    <footer>
+      <app-footer />
+    </footer>
+  </div>
+</section> -->
+
+
+<!-- form-register & login
+<section>
+  <div>
+    <form class="form-1">
+      <label>Email</label>
+      <input type="text" [formControl]="EmailCtrl">
+
+      <label>Name</label>
+      <input type="text" [formControl]="NameCtrl">
+
+      <label>Password</label>
+      <input type="text" [formControl]="PasswordCtrl">
+
+      <button (click)="register()" mat-stroked-button color="primary">Register</button>
+    </form>
+  </div>
+  <div>
+    <form class="form-2">
+      <label>Email</label>
+      <input type="text" [formControl]="EmailCtrl">
+
+      <label>Password</label>
+      <input type="text" [formControl]="PasswordCtrl">
+
+      <button (click)="login()" mat-stroked-button color="primary">Login</button>
+    </form>
+  </div>
+</section> -->
+
+
+<!-- List&Loop 
+<div>
+  <button (click)="showName()" mat-stroked-button color="primary">Show Name</button>
+  <button (click)="addToList()" mat-flat-button color="primary">Add To List</button>
+  <button (click)="removeToList()" mat-raised-button color="warn">Remove To List</button>
+  <button (click)="sortList()" mat-raised-button color="primary">Sort List</button>
+  <button (click)="showNamesOneByOne()" mat-stroked-button color="primary">Show One By One</button>
+
+  @for (name of names; track $index) {
+    <h2>{{name}}</h2>
+  }
+
+  <h2>{{names}}</h2>
+</div>
+ -->
