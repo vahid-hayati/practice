@@ -8,6 +8,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { RegisterComponent } from './components/account/register/register.component';
 import { LoginComponent } from './components/account/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { Member } from './models/member.model';
 
 @Component({
   selector: 'app-root',
@@ -23,5 +24,11 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  showName(): void {
+    let user: Member = {
+      name: 'laura'
+    }
 
+    console.log(user);
+  }
 }
